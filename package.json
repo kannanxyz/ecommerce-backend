@@ -16,5 +16,10 @@
     "url": "https://github.com/kannanxyz/ecommerce-web/issues"
   },
   "homepage": "https://github.com/kannanxyz/ecommerce-web#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  }
 }
