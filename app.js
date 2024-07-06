@@ -1,13 +1,12 @@
 //server start
 const express = require('express');
-const { model } = require('mongoose');
+
+const { userRouter } = require('./routes/userRouter');
 
 const app = express();
 
-app.get('/',(request,response)=>{
-    response.send("Hello World");
-})
+app.use('/api/v1', userRouter);
 
-module.exports={
-app
-}
+module.exports = {
+    app
+};/// export to index.js
