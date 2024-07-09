@@ -16,9 +16,9 @@ app.use(cors({
 }))
 //cookie parser
 app.use(cookieParser())
-//parse middelware
+//body-parse middelware
 app.use(express.json());
-//middle ware
+//request log middle ware
 app.use(requestLogger)
 
 app.use('/api/v1', userRouter);
